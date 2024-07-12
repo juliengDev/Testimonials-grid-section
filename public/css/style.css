@@ -19,8 +19,11 @@ ORDER: Base + typography > general layout + grid > page layout > components
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 :root {
   --color-light-grey: #cfcfcf;
+  --color-dark-grey: #48556a;
+  --color-dark2-grey: #19202d;
   --color-pure-white: #ffffff;
   --color-body: #ecf2f8;
+  --color-purple: #733fc8;
 }
 
 * {
@@ -39,6 +42,7 @@ body {
   min-height: 100dvh;
   margin: 0;
   background-color: var(--color-body);
+  color: var(--color-pure-white);
 }
 
 html {
@@ -79,46 +83,62 @@ body {
   font-family: "Barlow Semi Condensed", sans-serif;
   font-weight: 500;
   line-height: 1;
-  font-size: clamp(1.3rem, 1.5vw, 2rem);
+  font-size: clamp(0.8rem, 1.5vw, 1.3rem);
+}
+
+.ft-name {
+  font-size: clamp(0.8rem, 1.5vw, 1.3rem);
+  font-weight: 500;
+  line-height: 0.81;
 }
 
 .ft-verified {
-  font-size: clamp(1.1rem, 1.5vw, 1.8rem);
+  font-size: clamp(0.8rem, 1.5vw, 1.1rem);
+  font-weight: 500;
+  opacity: 0.5;
 }
 
 .ft-intro {
-  font-size: clamp(2rem, 1.5vw, 2.5rem);
+  font-size: clamp(1.5rem, 1.5vw, 2rem);
   font-weight: 600;
+  z-index: 1;
 }
 
 .ft-txt {
+  font-size: clamp(0.8rem, 1.5vw, 1.3rem);
   color: var(--color-light-grey);
-  line-height: 1.125;
+  line-height: 18px;
 }
 
 .grid__container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: auto auto;
   grid-template-areas: "daniel daniel jonathan kira" "jeanette patrick patrick kira";
   gap: 3rem;
+  align-content: start;
   margin: 16.4rem auto;
   width: min(111rem, 80%);
 }
 .grid__container__daniel {
   grid-area: daniel;
+  align-self: stretch;
 }
 .grid__container__jonathan {
   grid-area: jonathan;
+  align-self: stretch;
 }
 .grid__container__kira {
   grid-area: kira;
+  align-self: stretch;
 }
 .grid__container__jeanette {
   grid-area: jeanette;
+  align-self: stretch;
 }
 .grid__container__patrick {
   grid-area: patrick;
+  align-self: stretch;
 }
 
 .attribution {
@@ -136,7 +156,74 @@ body {
   display: flex;
   flex-direction: column;
   border-radius: 8px;
-  border: 1px solid red;
+  padding: 2.6rem 3.2rem 3.2rem;
+  gap: 1.6rem;
+  height: auto;
+}
+.cards__item1 {
+  position: relative;
+  background-color: var(--color-purple);
+}
+.cards__item1__quotation__icon {
+  position: absolute;
+  top: 0;
+  right: 8rem;
+}
+.cards__item2 {
+  background-color: var(--color-dark-grey);
+}
+.cards__item3 {
+  color: var(--color-dark-grey);
+  background-color: var(--color-pure-white);
+}
+.cards__item4 {
+  background-color: var(--color-dark2-grey);
+}
+.cards__item5 {
+  color: var(--color-dark-grey);
+  background-color: var(--color-pure-white);
+}
+.cards__heading {
+  width: min(12.1rem, 100%);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: 1fr;
+  gap: 1.7rem;
+}
+.cards__heading__avatar__wrapper {
+  position: relative;
+  width: 28px;
+  height: 28px;
+  grid-column: 1;
+  grid-row: 1/2;
+}
+.cards__heading__avatar__wrapper::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 2px solid #a775f1;
+  z-index: 1;
+}
+.cards__heading__avatar {
+  position: relative;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  grid-column: 1;
+  grid-row: 1/2;
+  object-fit: cover;
+}
+.cards__heading__title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  grid-column: 2;
+  grid-row: 1/2;
 }
 
 /*# sourceMappingURL=style.css.map */

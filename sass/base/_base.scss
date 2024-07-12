@@ -1,7 +1,10 @@
 :root {
   --color-light-grey: #cfcfcf;
+  --color-dark-grey: #48556a;
+  --color-dark2-grey: #19202d;
   --color-pure-white: #ffffff;
   --color-body: #ecf2f8;
+  --color-purple: #733fc8;
 }
 
 * {
@@ -19,6 +22,7 @@ body {
   min-height: 100dvh;
   margin: 0;
   background-color: var(--color-body);
+  color: var(--color-pure-white);
 }
 html {
   box-sizing: border-box;

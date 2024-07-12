@@ -1,27 +1,33 @@
 .grid__container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: auto auto;
   grid-template-areas:
     "daniel daniel jonathan kira"
     "jeanette patrick patrick kira";
   gap: 3rem;
+  align-content: start;
   margin: 16.4rem auto;
   width: min(111rem, 80%);
 
   &__daniel {
     grid-area: daniel;
+    align-self: stretch;
   }
   &__jonathan {
     grid-area: jonathan;
+    align-self: stretch;
   }
   &__kira {
     grid-area: kira;
+    align-self: stretch;
   }
   &__jeanette {
     grid-area: jeanette;
+    align-self: stretch;
   }
   &__patrick {
     grid-area: patrick;
+    align-self: stretch;
   }
 }
