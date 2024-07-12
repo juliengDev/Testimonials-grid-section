@@ -105,8 +105,9 @@ body {
 
 .ft-txt {
   font-size: clamp(0.8rem, 1.5vw, 1.3rem);
+  color: var(--color-light-grey);
   line-height: 18px;
-  margin-top: 1rem;
+  margin: 0.8rem 0 2rem;
 }
 
 .grid__container {
