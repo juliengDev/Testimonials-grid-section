@@ -1,25 +1,27 @@
-.centered-div {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-.centered-div2 {
-  margin: 0 auto;
-  max-width: 50%;
-  text-align: center;
-}
+.grid__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "daniel daniel jonathan kira"
+    "jeanette patrick patrick kira";
+  gap: 3rem;
+  margin: 16.4rem auto;
+  width: min(111rem, 80%);
 
-.centered-div3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 auto;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  &__daniel {
+    grid-area: daniel;
+  }
+  &__jonathan {
+    grid-area: jonathan;
+  }
+  &__kira {
+    grid-area: kira;
+  }
+  &__jeanette {
+    grid-area: jeanette;
+  }
+  &__patrick {
+    grid-area: patrick;
+  }
 }
