@@ -101,13 +101,14 @@ body {
 .ft-intro {
   font-size: clamp(1.5rem, 1.5vw, 2rem);
   font-weight: 600;
+  line-height: 24px;
   z-index: 1;
 }
 
 .ft-txt {
   font-size: clamp(0.8rem, 1.5vw, 1.3rem);
-  color: var(--color-light-grey);
   line-height: 18px;
+  margin-top: 1rem;
 }
 
 .grid__container {
@@ -117,7 +118,7 @@ body {
   grid-template-areas: "daniel daniel jonathan kira" "jeanette patrick patrick kira";
   gap: 3rem;
   align-content: start;
-  margin: 16.4rem auto;
+  margin: 16.4rem auto 0;
   width: min(111rem, 80%);
 }
 @media only screen and (max-width: 56.25em) {
@@ -152,11 +153,11 @@ body {
   margin: 1.6rem 0 6rem;
   font-size: 1.1rem;
   text-align: center;
-  color: var(--color-wenge-brown);
+  color: var(--color-dark2-grey);
 }
 .attribution__credit {
   font-weight: 800;
-  color: var(--color-dark-raspberry) !important;
+  color: var(--color-purple) !important;
 }
 
 .cards {
