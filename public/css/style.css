@@ -163,7 +163,7 @@ body {
   display: flex;
   flex-direction: column;
   border-radius: 8px;
-  padding: 2.6rem 3.2rem 3.2rem;
+  padding: 2.6rem 3.2rem 0 3.2rem;
   gap: 1.6rem;
   height: auto;
   position: relative;
