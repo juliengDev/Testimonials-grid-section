@@ -9,7 +9,16 @@
   align-content: start;
   margin: 16.4rem auto;
   width: min(111rem, 80%);
-
+  @include respond(tab-port) {
+    width: min(32.7rem, 80%);
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "daniel"
+      "jonathan"
+      "jeanette"
+      "patrick"
+      "kira";
+  }
   &__daniel {
     grid-area: daniel;
     align-self: stretch;

@@ -120,6 +120,13 @@ body {
   margin: 16.4rem auto;
   width: min(111rem, 80%);
 }
+@media only screen and (max-width: 56.25em) {
+  .grid__container {
+    width: min(32.7rem, 80%);
+    grid-template-columns: 1fr;
+    grid-template-areas: "daniel" "jonathan" "jeanette" "patrick" "kira";
+  }
+}
 .grid__container__daniel {
   grid-area: daniel;
   align-self: stretch;
