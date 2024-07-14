@@ -220,9 +220,9 @@ body {
   background-color: var(--color-pure-white);
 }
 .cards__heading {
-  width: min(12.1rem, 100%);
+  width: min(14.1rem, 100%);
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: auto 1fr;
   grid-template-rows: 1fr;
   gap: 1.7rem;
 }
@@ -260,6 +260,7 @@ body {
   gap: 0.4rem;
   grid-column: 2;
   grid-row: 1/2;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
