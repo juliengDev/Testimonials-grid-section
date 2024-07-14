@@ -107,7 +107,7 @@ body {
   font-size: clamp(0.8rem, 1.5vw, 1.3rem);
   line-height: 18px;
   margin: 1.4rem 0 0;
-  opacity: 0.5;
+  opacity: 0.4;
 }
 
 .grid__container {
@@ -176,7 +176,7 @@ body {
   flex-direction: column;
   border-radius: 8px;
   padding: 2.6rem 3.2rem 2.6rem 3.2rem;
-  gap: 1.2rem;
+  gap: 1.4rem;
   height: auto;
   position: relative;
 }
